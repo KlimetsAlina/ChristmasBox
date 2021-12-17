@@ -8,7 +8,7 @@ public class KilledPiece : MonoBehaviour
     public bool falling;
 
     float speed = 16f;
-    float gravity = 32f;
+    float gravity = 30f;
     Vector2 moveDir;
     RectTransform rect;
     Image img;

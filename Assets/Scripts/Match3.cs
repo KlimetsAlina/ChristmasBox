@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Match3 : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class Match3 : MonoBehaviour
     List<KilledPiece> killed;
 
     System.Random random;
+
+    public Text scoreText;
+    public int score = 0;
 
     void Start()
     {
@@ -172,6 +176,8 @@ public class Match3 : MonoBehaviour
         dead = new List<NodePiece>();
         killed = new List<KilledPiece>();
 
+        scoreText = GameObject.Find("Score").GetComponentInChildren<Text>();
+
         InitializeBoard();
         VerifyBoard();
         InstantiateBoard();
@@ -235,6 +241,9 @@ public class Match3 : MonoBehaviour
     public void ResetPiece(NodePiece piece)
     {
         piece.ResetPosition();
+        score++;
+        scoreText.text = score.ToString();
+
         update.Add(piece);
     }
 
