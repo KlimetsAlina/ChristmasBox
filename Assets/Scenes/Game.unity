@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.85773414, g: 0.8962264, b: 0.16487186, a: 1}
+  m_Color: {r: 0.5899996, g: 0.7921569, b: 0.09411762, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.85773414, g: 0.8962264, b: 0.16487186, a: 1}
+  m_Color: {r: 0.5899996, g: 0.7921569, b: 0.09411762, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -861,6 +861,8 @@ MonoBehaviour:
   killedBoard: {fileID: 1182704540}
   nodePiece: {fileID: 6639506843271348758, guid: 0902085ff65014ceaa706c39deeefa5c, type: 3}
   killedPiece: {fileID: 5033090928488409891, guid: f85bbf6b9cd984056adc1e93a605a2d4, type: 3}
+  scoreText: {fileID: 0}
+  score: 0
 --- !u!4 &1120503022
 Transform:
   m_ObjectHideFlags: 0

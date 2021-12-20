@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4627451, g: 0.8235294, b: 0.07058824, a: 1}
+  m_Color: {r: 0.5899996, g: 0.7921569, b: 0.09411762, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.46274513, g: 0.8235295, b: 0.21568629, a: 1}
+  m_Color: {r: 0.5899996, g: 0.7921569, b: 0.09411762, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.46274513, g: 0.8235295, b: 0.21568629, a: 1}
+  m_Color: {r: 0.5899996, g: 0.7921569, b: 0.09411762, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 556f01cfccc344f2189286259f4a9b8c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 763a5c0011fb34e78b00ec7762dc3f26, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1041,7 +1041,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761081822}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1761081824
 Camera:
   m_ObjectHideFlags: 0
