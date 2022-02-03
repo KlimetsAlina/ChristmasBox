@@ -29,7 +29,9 @@ public class Match3 : MonoBehaviour
     System.Random random;
 
     public Text scoreText;
-    public int score = 0;
+    int score = 0;
+
+    public GameObject explosion;
 
     void Start()
     {
@@ -241,8 +243,6 @@ public class Match3 : MonoBehaviour
     public void ResetPiece(NodePiece piece)
     {
         piece.ResetPosition();
-        score++;
-        scoreText.text = score.ToString();
 
         update.Add(piece);
     }
@@ -288,8 +288,22 @@ public class Match3 : MonoBehaviour
         }
 
         int val = getValueAtPoint(p) - 1;
-        if (set != null && val >= 0 && val < pieces.Length)
-            set.Initialize(pieces[val], getPositionFromPoint(p));
+
+        if (set != null && val >= 0 && val < pieces.Length) {
+        	Vector2 positions = getPositionFromPoint(p);
+            set.Initialize(pieces[val], positions);
+
+            score++;
+        	scoreText.text = score.ToString();
+
+        	GameObject explosionRef = (GameObject)Instantiate(explosion, positions, Quaternion.identity, GameObject.FindGameObjectWithTag("Canvas").transform);
+			RectTransform rect = explosionRef.GetComponent<RectTransform>();
+        	rect.anchoredPosition = new Vector2(positions.x + 600, positions.y - 40);
+
+
+        	Destroy(explosionRef, 2);
+        	
+        }
     }
 
     List<Point> isConnected(Point p, bool main)

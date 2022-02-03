@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 352276161}
   - component: {fileID: 352276160}
   - component: {fileID: 352276159}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: BackToMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,8 +267,8 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  m_Layer: 0
-  m_Name: Main Camera
+  m_Layer: 6
+  m_Name: 2D Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +281,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -306,7 +306,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60
   orthographic: 1
   orthographic size: 5
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 563224583}
   - component: {fileID: 563224585}
   - component: {fileID: 563224584}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,9 +427,9 @@ GameObject:
   - component: {fileID: 716425492}
   - component: {fileID: 716425491}
   - component: {fileID: 716425495}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -483,8 +483,8 @@ Canvas:
   m_GameObject: {fileID: 716425490}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 786270578}
   - component: {fileID: 786270580}
   - component: {fileID: 786270579}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 910838350}
   - component: {fileID: 910838352}
   - component: {fileID: 910838351}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 944018600}
   - component: {fileID: 944018599}
   - component: {fileID: 944018598}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +821,7 @@ GameObject:
   - component: {fileID: 1120503022}
   - component: {fileID: 1120503021}
   - component: {fileID: 1120503023}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: _Match3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +862,7 @@ MonoBehaviour:
   nodePiece: {fileID: 6639506843271348758, guid: 0902085ff65014ceaa706c39deeefa5c, type: 3}
   killedPiece: {fileID: 5033090928488409891, guid: f85bbf6b9cd984056adc1e93a605a2d4, type: 3}
   scoreText: {fileID: 0}
-  score: 0
+  explosion: {fileID: 4833694326896736610, guid: 1528fe8bc546643819505a5fa92e33b2, type: 3}
 --- !u!4 &1120503022
 Transform:
   m_ObjectHideFlags: 0
@@ -871,7 +871,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120503020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 924.8402, y: 832.7005, z: -2733.6274}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -899,7 +899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1182704540}
   - component: {fileID: 1182704541}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: KilledBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,7 +944,7 @@ GameObject:
   - component: {fileID: 1326042217}
   - component: {fileID: 1326042219}
   - component: {fileID: 1326042218}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: GameBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
